@@ -1,0 +1,84 @@
+div.top {
+  padding: 3rem;
+  color: white;
+  min-height: 71.5vh;
+  p.noRecord {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+}
+
+div.owner {
+  text-align: center;
+  margin: 1rem;
+  h1 {
+    font-size: 4.5rem;
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+  }
+  div.search {
+    width: 20%;
+    position: relative;
+    left: 73vw;
+  }
+}
+
+div.tokenTable-border {
+  border-left: 5px solid lightgreen;
+  border-right: 5px solid lightgreen;
+  margin-bottom: 5rem;
+
+  div.tokenTable {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    ul {
+      list-style: none;
+      padding: 0 2rem 2rem 2rem;
+      li {
+        border-bottom: 1px solid white;
+        padding: 1rem;
+        font-size: 1.5rem;
+        button.amount-deleteOne {
+          border: none;
+          background-color: #272727;
+          margin-left: 3rem;
+          i.fas {
+            font-size: 1.25rem;
+            color: white;
+            margin: 0.3rem;
+          }
+        }
+      }
+      .title {
+        font-size: 3rem;
+      }
+      .totalData {
+        color: #ff8c00;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

@@ -1,0 +1,30 @@
+div.mustlogin {
+  min-height: 65vh;
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+div.auth-block {
+  min-height: 71.5vh;
+  padding: 3rem;
+  color: white;
+  div.title-auth {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  div.form-group {
+    label {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+li.login,
+li.register,
+li.logout {
+  a {
+    color: white;
+  }
+}

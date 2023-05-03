@@ -1,0 +1,37 @@
+div.profile {
+  padding: 3rem;
+  color: white;
+}
+
+table.table {
+  color: white;
+  font-size: 1.1rem;
+}
+div.pro-position {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0 1.5rem 0;
+  align-items: center;
+  h1 {
+    i {
+      margin: 0 2.5rem 0 2.5rem;
+    }
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  input {
+    font-size: 1.15rem;
+    margin: 0.15rem 0.5rem 2.5rem 0.5rem;
+    padding: 0.5rem;
+    border: 0.25px solid rgb(39, 39, 21);
+    border-radius: 0.2rem;
+    width: 20rem;
+  }
+}
+div.pro-btn {
+  text-align: center;
+  button {
+    font-size: 2rem;
+  }
+}

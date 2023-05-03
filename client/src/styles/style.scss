@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 0.5 0.75rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+body {
+  font-family: "Baloo 2", cursive;
+  background-color: #272727;
+  // section.animation-wrap {
+  //   position: fixed;
+  //   width: 100%;
+  //   height: 100vh;
+  //   background-color: white;
+  //   section.animation {
+  //     width: 100%;
+  //     height: 80vh;
+  //     margin-top: 10vh;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     div.hero {
+  //       width: 100%;
+  //       height: 0;
+  //     }
+  //     img {
+  //       width: 100%;
+  //       height: 100%;
+  //       object-fit: cover;
+  //     }
+  //   }
+  //   div.slider {
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     width: 100%;
+  //     height: 100vh;
+  //     background: linear-gradient(to right, rgb(144, 144, 144), rgb(0, 0, 0));
+  //     z-index: -1;
+  //   }
+  // }
+
+  nav {
+    box-shadow: 0 8px 6px -6px black;
+    margin: 1 0rem;
+    padding: 0.5rem;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0.5rem;
+      padding-left: 1rem;
+      div {
+        display: flex;
+      }
+      div.auth {
+        padding-right: 1.5rem;
+      }
+      li {
+        list-style-type: none;
+        margin: 1rem;
+        &:hover {
+          transform: scale(1.2);
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  section.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 75vh;
+    div.main-Price-Calculation {
+      margin-top: 1rem;
+      margin-bottom: 0.8rem;
+      padding: 0.5rem;
+      h1 {
+        color: rgb(255, 98, 41);
+        font-size: 3.5rem;
+        &:hover {
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff852e,
+            0 0 20px #ff852e, 0 0 25px #ff852e, 0 0 30px #ff852e;
+        }
+      }
+
+      div.top-btn {
+        display: flex;
+        button {
+          margin-top: 1rem;
+          padding: 0.3rem;
+          font-size: 1.1rem;
+          font-weight: bold;
+          border-radius: 0.5rem;
+          margin-left: 2rem;
+          margin-right: 2rem;
+          background-color: white;
+        }
+        button.buy-btn {
+          margin-left: 10.6rem;
+        }
+        button#big-trash-can {
+          border: none;
+          background-color: #272727;
+          margin-left: 4.4rem;
+          i {
+            font-size: 1.8rem;
+            color: white;
+          }
+        }
+      }
+    }
+
+    div.main-input {
+      form {
+        div.position {
+          display: flex;
+          input {
+            font-size: 1.15rem;
+            margin: 0.35rem;
+            padding: 0.5rem;
+            border: 0.25px solid rgb(39, 39, 21);
+            border-radius: 0.2rem;
+            width: 13rem;
+          }
+
+          input.class-token {
+            width: 8rem;
+          }
+
+          button {
+            border: none;
+            background-color: #272727;
+            i {
+              font-size: 1.25rem;
+              color: white;
+              margin: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+
+    button.plus {
+      background-color: #272727;
+      width: 2.5rem;
+      margin: 3rem 1rem 1.5rem 0;
+      border: none;
+      cursor: pointer;
+      i {
+        font-size: 2.5rem;
+        color: white;
+      }
+    }
+
+    div.average {
+      display: flex;
+      width: 600px;
+      height: 100px;
+      border: 3px solid red;
+      border-radius: 50px;
+      animation: changecolor 9s 1s infinite;
+      p {
+        flex: 1 1 50px;
+        margin-top: 1.7rem;
+        margin-left: 1rem;
+        color: white;
+        font-size: 1.5rem;
+        white-space: nowrap;
+      }
+      h2 {
+        flex: 3 1 200px;
+        font-size: 3.2rem;
+        text-align: left;
+        margin: 0.5rem;
+        margin-top: 1.1rem;
+        overflow: hidden;
+        color: #ffe4c4;
+      }
+    }
+
+    section.output {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      div.PNL {
+        width: 200px;
+        height: 200px;
+        border: 3px solid red;
+        border-radius: 50%;
+        text-align: center;
+        animation: changecolor 9s 1s infinite;
+        p {
+          margin-top: 13px;
+          color: white;
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 2.75rem;
+          overflow: hidden;
+          color: #ffe4c4;
+        }
+      }
+
+      div.buy,
+      div.sell {
+        width: 150px;
+        height: 150px;
+        border: 3px solid red;
+        border-radius: 50%;
+        text-align: center;
+        animation: changecolor 9s 1s infinite;
+        margin: 1.2rem 8rem;
+        p {
+          margin-top: 14px;
+          color: white;
+          font-size: 1rem;
+        }
+        h2 {
+          font-size: 2rem;
+          overflow: hidden;
+          color: #ffe4c4;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  div.bottom {
+    position: relative;
+    background-image: url(../picture/ETHbg_footer.jpg);
+    background-position: center;
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 13vh;
+    box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+    &::before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    p {
+      position: relative;
+      text-align: center;
+      font-size: 1.2rem;
+      padding-top: 2rem;
+      font-weight: bolder;
+    }
+  }
+}
+
+// div.empty {
+//   height: 70vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   h1 {
+//     font-family: "Work Sans", sans-serif;
+//     font-weight: 800;
+//     font-size: 10rem;
+//     width: 5em;
+//     line-height: 1.2em;
+//     text-align: center;
+//   }
+//   #comingsoon {
+//     background: #ca4246;
+//     background-color: #ca4246;
+//     background: conic-gradient(
+//       #ca4246 16.666%,
+//       #e16541 16.666%,
+//       #e16541 33.333%,
+//       #f18f43 33.333%,
+//       #f18f43 50%,
+//       #8b9862 50%,
+//       #8b9862 66.666%,
+//       #476098 66.666%,
+//       #476098 83.333%,
+//       #a7489b 83.333%
+//     );
+
+//     background-size: 57%;
+//     background-repeat: repeat;
+
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+
+//     animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+//     cursor: pointer;
+//     &:hover {
+//       animation: rainbow-text-animation 0.5s ease forwards;
+//     }
+//   }
+// }
+
+// @keyframes rainbow-text-animation {
+//   0% {
+//     background-size: 57%;
+//     background-position: 0 0;
+//   }
+//   20% {
+//     background-size: 57%;
+//     background-position: 0 1em;
+//   }
+//   100% {
+//     background-size: 300%;
+//     background-position: -9em 1em;
+//   }
+// }
+
+// @keyframes rainbow-text-animation-rev {
+//   0% {
+//     background-size: 300%;
+//     background-position: -9em 1em;
+//   }
+//   20% {
+//     background-size: 57%;
+//     background-position: 0 1em;
+//   }
+//   100% {
+//     background-size: 57%;
+//     background-position: 0 0;
+//   }
+// }
+
+@keyframes changecolor {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: limegreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    header {
+      nav {
+        box-shadow: 0 8px 6px -6px black;
+        margin: 1 0rem;
+        padding: 0.5rem;
+        ul {
+          flex-direction: column;
+          li {
+            margin: 0.3rem;
+          }
+        }
+      }
+    }
+
+    main {
+      section.main {
+        align-items: center;
+        div.main-Price-Calculation {
+          div.top-btn {
+            display: flex;
+            justify-content: center;
+            button {
+              margin-right: 2rem;
+              margin-left: 2rem;
+            }
+            button.buy-btn {
+              margin-left: 2rem;
+            }
+            button#big-trash-can {
+              margin-left: 2rem;
+            }
+          }
+        }
+
+        div.main-input {
+          form {
+            div.position {
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              align-items: center;
+              input {
+                width: 15rem;
+              }
+
+              input.class-token {
+                width: 8rem;
+              }
+
+              button {
+                margin-bottom: 1.5rem;
+              }
+            }
+          }
+        }
+
+        div.average {
+          display: flex;
+          flex-wrap: wrap;
+          width: 360px;
+          p {
+            flex: 1 1 30px;
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+          }
+          h2 {
+            flex: 3 1 120px;
+            font-size: 2.5rem;
+          }
+        }
+
+        section.output {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          margin-top: 1rem;
+          div.PNL {
+            margin: 1rem 6.5rem;
+          }
+
+          div.buy,
+          div.sell {
+            margin: 1rem 8rem;
+          }
+        }
+      }
+    }
+  }
+
+  div.empty {
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  section.output {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1rem;
+    div.PNL {
+      margin: 1rem 6.5rem;
+    }
+
+    div.buy,
+    div.sell {
+      margin: 1rem 8rem;
+    }
+  }
+}
+
+@import "./mytoken.scss";
+@import "./profile.scss";
+@import "./auth.scss";
