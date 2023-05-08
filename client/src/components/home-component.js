@@ -23,6 +23,12 @@ const HomeComponent = (props) => {
   };
 
   // 設置刪除input事件
+  const handle = (e) => {
+    if (e.key == "Enter") {
+      e.preventDefault();
+    }
+  };
+
   const trashHandler = (e) => {
     e.preventDefault();
     e.target.parentElement.parentElement.style.animation =
@@ -30,7 +36,6 @@ const HomeComponent = (props) => {
     e.target.parentElement.parentElement.addEventListener(
       "animationend",
       (e) => {
-        console.log(e);
         e.target.remove();
         getAvg();
       }
@@ -102,7 +107,7 @@ const HomeComponent = (props) => {
 
   return (
     <main>
-      <section className="main">
+      <section className="main" onKeyDown={handle}>
         <div className="main-Price-Calculation">
           <h1>Price Calculation Input Form</h1>
           <div className="top-btn">
