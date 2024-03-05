@@ -41,8 +41,6 @@
 
 1. 運行前端應用：
 `npm start`
-2. 運行後端應用：
-`node server.js`
 
 ## Contributing Guidelines
 如果您發現了任何問題或有改進的建議，歡迎提交 issue 或 pull request，謝謝！
