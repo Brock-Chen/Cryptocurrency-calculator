@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://crypto-calculator-production.up.railway.app/api/data";
+const API_URL = "https://crypto-calculator.up.railway.app/api/data";
 
 class DataService {
   // 驗證使用者
