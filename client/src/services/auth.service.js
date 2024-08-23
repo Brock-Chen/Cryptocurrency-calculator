@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://cryptocurrency-calculator.herokuapp.com/api/user";
+const API_URL = "https://crypto-calculator-production.up.railway.app/api/user";
 
 class AuthService {
   login(email, password) {

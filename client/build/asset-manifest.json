@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb1e40c7.css",
+    "main.js": "/static/js/main.56e70bf4.js",
+    "static/media/ETHbg_footer.jpg": "/static/media/ETHbg_footer.f4640a7e129b04e5826f.jpg",
+    "index.html": "/index.html",
+    "main.cb1e40c7.css.map": "/static/css/main.cb1e40c7.css.map",
+    "main.56e70bf4.js.map": "/static/js/main.56e70bf4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb1e40c7.css",
+    "static/js/main.56e70bf4.js"
+  ]
+}
