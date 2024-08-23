@@ -5,6 +5,9 @@
 # Cryptocurrency-calculator
 這是一個使用**MERN**全端架構所製作出來的網站，使用包括React、Express.js、MongoDB、JavaScript等技術進行開發。<br/>
 
+### 網址 ⬇⬇⬇
+https://crypto-calculator.up.railway.app
+
 ### 目的/動機
 該網站針對加密貨幣使用者，使其可以快速地算出盈虧，當倉位分散在不同的平台或錢包時，可以在該網站做統整並紀錄完整的持倉，對於平均價格以及總數量也可以一目瞭然。<br/>
 旨在讓幣圈的使用者可以簡單的使用計算功能並操作整合自己所持有的幣的紀錄，算均價不需要再使用計算機了!
